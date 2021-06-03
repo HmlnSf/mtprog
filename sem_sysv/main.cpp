@@ -15,7 +15,7 @@ union semun {
 
 int main()
 {
-	key_t semkey = ftok("/tmp/sem.temp", 0); 
+	key_t semkey = ftok("/tmp/sem.temp", 1); 
 	int semd = semget( semkey, 16, IPC_CREAT | 0666 );
 	unsigned short semaphores[16];
 	for( int i = 0; i < 16; i++ ) {
