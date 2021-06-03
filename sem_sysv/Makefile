@@ -1,2 +1,2 @@
 all:
-	g++ -std=c++11 -o sem_sysv main.cpp
+	g++ -std=c++11 -o main main.cpp -lpthread
